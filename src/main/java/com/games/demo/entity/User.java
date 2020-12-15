@@ -28,7 +28,7 @@ public class User {
             inverseJoinColumns = {@JoinColumn(name = "RoleId")})
     private List<Role> roles;
 
-    @OneToMany(mappedBy = "userRequests", fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonBackReference
     private List<Request> requests;
 

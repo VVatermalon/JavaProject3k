@@ -33,7 +33,7 @@ public class Game {
     @Column(name = "CurrentPeopleAmount", nullable = false)
     private Integer currentPeopleAmount;
 
-    @OneToMany(mappedBy = "GameRequests", fetch = FetchType.EAGER, orphanRemoval = true)
+    @OneToMany(mappedBy = "game", fetch = FetchType.EAGER, orphanRemoval = true)
     @JsonBackReference
     private List<Request> requests;
 

@@ -16,6 +16,6 @@ public class Category {
     @Column(name = "Name", nullable = false)
     private String name;
 
-    @ManyToMany(mappedBy = "GameCategories", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "categories", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Game> games;
 }
