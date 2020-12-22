@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rating page</title>
+</head>
+<body>
+<form action="post" th:object="${ratingForm}">
+    <select th:field="*{studentName}">
+        <option th:each="subject : ${subjects}"
+                th:value="${subject}"
+                th:text="#{${subject}}">Wireframe</option>
+    </select>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <script th:src="@{/js/LoginScript.js}"></script>
+</head>
+<body>
+
+<div class="main_div">
+    <div class="block-input">
+
+        <h2><span class="entypo-login"><i class="fa fa-sign-in"></i></span> Login</h2>
+        <div class="block-input-item">
+
+            <input id="username" type="text" placeholder="Enter login" class="user" />
+        </div>
+        <div class="block-input-item">
+
+            <input id="password" type="password" placeholder="Enter password" class="pass"/>
+            <h3 id="result" align="center"></h3>
+        </div>
+    </div>
+    <button class="submit" onclick="Login()"><span class="entypo-lock"><i class="fa fa-lock"></i></span></button>
+</div>
+</body>
+</html>
